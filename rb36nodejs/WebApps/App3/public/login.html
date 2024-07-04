@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <style>
+        /* .navbar {
+            display: flex;
+            border: 2px solid;
+            justify-content: space-between;
+            height: 40px;
+            padding-top: 20px;
+        }
+
+        .nv {
+            font-size: 22px;
+        } */
+
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* min-height: 50vh; */
+            background-color: darkred;
+        }
+
+        .count {
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%;
+            height: 45%;
+            background-color: white;
+        }
+
+        .h1 {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 50%;
+            padding: 5px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="navbar">
+        <div class="nv">
+            <a href="/home">Home</a>
+        </div>
+        <div class="nv"><a href="/courses">Course</a></div>
+        <div class="nv">
+            <a href="/login">Login/Signup</a>
+        </div>
+    </div> -->
+    <div class="count">
+        <h1>Login</h1>
+        <form action="/info" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+            <button type="submit">Log In</button>
+            <p>If you are not registered,then <a href="/signup"> Register Here</a></p>
+        </form>
+    </div>
+</body>
+
+</html>

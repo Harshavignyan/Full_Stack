@@ -1,0 +1,72 @@
+head
+  title Home page
+  style.
+    .navbar {
+    display: flex;
+    border: 2px solid;
+    justify-content: space-between;
+    height: 40px;
+    padding-top: 20px;
+    }
+    .nv {
+    font-size: 22px;
+    }
+    .info {
+    margin-top: 15%;
+    }
+    .courses {
+    /* box-sizing: border-box; */
+    border: 2px solid;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:5%;
+    }
+    .sub {
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    width:20%;
+    border: 2px solid;
+    padding-left:16px;
+    }
+    .btm {
+    display: flex;
+    /* border: 2px solid; */
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    }
+.navbar
+  .nv
+    a(href='') Home
+  .nv
+    a(href='') Course
+  .nv
+    a(href='') Login/Signup
+// <h1>Edupoly</h1>
+center
+  .info
+    img(src='file:///C:/Users/prasad/Desktop/edupoly-logo-light.png' alt='' width='330px')
+    br
+    br
+    p
+    h3
+      | Best learning platform with top end courses. Taught by experts to help you acquire new skills and lead
+      | your career.
+    p
+.courses
+  .sub
+    .im
+      img(src='https://th.bing.com/th/id/OIP.33CwBYkmnMfpA9Djup22JwHaHa?rs=1&pid=ImgDetMain' alt='' width='200px')
+    .crsinfo
+      p
+        | ReactJS, also known as React, is a popular 
+        br
+        | JavaScript library for building user interfaces. It
+        |                     is also referred to as a front-end JavaScript library.
+  .btm
+    div free
+    div
+      a(href=`/courses/${course._id}`) ViewMore

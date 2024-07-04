@@ -1,0 +1,11 @@
+html 
+    head 
+        title #{coursenipattuko.coursename}
+    body 
+        h1 idi em course ante #{coursenipattuko.coursename}
+        ul  
+            li= "Trainer: " + coursenipattuko.coursetrainer
+            li= "Duration: " + coursenipattuko.courseduration
+            li= "Price: " + coursenipattuko.courseprice
+            li= "Prereq: " + coursenipattuko.courseprereq
+        a(href=`/${okay._id}/courses/${coursenipattuko._id}/buy`) buy

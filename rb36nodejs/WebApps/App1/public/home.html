@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        button {
+        background-color: lightblue; /* Green */
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        color: black;
+        vertical-align: center;
+        cursor:pointer;
+        border-radius: 5px;
+        margin-top: 1%;
+      }
+    </style>
+</head>
+<body>
+    <h1> Welcome to Edupoly </h1>
+    <form action="/submit">
+        <input type="text" name="name" value="Name">
+        <br>
+        <input type="text" name="age" value="Age">
+        <br>
+        <input type="text" name="contact" value="Contact" pattern="\d{10}">
+        <br>
+        <input type="text" name="text" value="additional text">
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

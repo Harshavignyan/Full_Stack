@@ -1,0 +1,1 @@
+This is a smaple text file to demonstrate path package.

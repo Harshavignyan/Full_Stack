@@ -1,0 +1,65 @@
+<html>
+<head>
+    <style>
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:darkred;
+    /* background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201101/pngtree-scene-with-geometrical-forms-the-poster-model-minimal-background-render-image_452981.jpg); */
+}
+
+.count {
+    background-color: #fff;
+    padding: 30px;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    /* background-image: url(https://img.freepik.com/free-vector/grunge-watercolor-background-using-pastel-colours_1048-6530.jpg?size=626&ext=jpg&ga=GA1.1.1682631581.1717006528&semt=ais_user); */
+    /* background-color: lightgreen; */
+    border: 1px solid;
+}
+
+.h1 {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px ;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    align-items: left;
+}
+
+button[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="count">
+        <h1>Register</h1>
+        <form action="/signup" method="post">
+            <label firstname>Firstname:</label>
+            <input type="text" name="firstname" placeholder="Enter your firstname"><br>
+            <label username>Username:</label>
+            <input type="text" name="username" placeholder="Enter your username"><br>
+            <label email>Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="email" placeholder="Enter your email"><br>
+            <label password>Password:</label>
+            <input type="password" name="password" placeholder="Enter your password"><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

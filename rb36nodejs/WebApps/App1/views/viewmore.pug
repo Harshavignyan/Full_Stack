@@ -1,0 +1,39 @@
+html 
+    head 
+        title viewmore 
+
+        style. 
+            li{
+                list-style-type: square;
+            }
+            button{
+                margin-top: 1%;
+            }
+            button {
+                background-color: lightblue; /* Green */
+                border: none;
+                color: white;
+                padding: 5px 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                color: black;
+                vertical-align: center;
+                cursor:pointer;
+                border-radius: 5px
+            }
+
+    body 
+        h1 View Info 
+
+        li= "Name: " + viewdata.name 
+
+        li= "Age: " + viewdata.age
+
+        li= "Contact: " + viewdata.contact 
+
+        li= "Text: " + viewdata.text
+    
+    form(method="get" action="/infodata")
+            button(type="submit") ViewAll

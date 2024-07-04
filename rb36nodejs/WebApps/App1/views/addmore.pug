@@ -1,0 +1,35 @@
+head
+  title addmore
+  style. 
+    button{
+        margin-top: 1%;
+    }
+    textarea{
+        width: 25%;
+        height: 20%;
+    }
+    button {
+        background-color: lightblue; /* Green */
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        color: black;
+        vertical-align: center;
+        cursor:pointer;
+        border-radius: 5px
+      }
+
+  body
+    h1 Enter the additional information:
+    
+    form(method="get" action=`/infodata/addinfo/takeinfo/${adddata._id}`)
+            textarea(name="text")
+            br
+            button(type="submit") Add
+    
+    form(method="get" action="/infodata")
+            button(type="submit") ViewAll

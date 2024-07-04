@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "pdfreader": "^3.0.2",
+    "sudo-prompt": "^9.2.1"
+  }
+}

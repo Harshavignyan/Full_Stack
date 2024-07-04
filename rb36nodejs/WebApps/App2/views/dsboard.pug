@@ -1,0 +1,189 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Dashboard
+  style.
+    .mainimg {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    }
+    body {
+    margin: 0px auto;
+    }
+    .firstdiv {
+    box-sizing: border-box;
+    position: relative;
+    /* border-style: solid; */
+    }
+    .maininfodiv {
+    width: 100%;
+    top: 4%;
+    position: absolute;
+    box-sizing: border-box;
+    }
+    .navbardiv {
+    /* border:1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    }
+    .Home {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: center;
+    /* border: 1px solid; */
+    width: 40%;
+    box-sizing: border-box;
+    }
+    .optionsdiv {
+    /* border:1px solid; */
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    }
+    .options {
+    /* border:1px solid; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    box-sizing: border-box;
+    }
+    .login {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    }
+    .title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid; */
+    color: #5d3b3b;
+    }
+    .name {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 24px;
+    margin: 15px;
+    }
+    .profile {
+    margin: 10px 30px 30px 50px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height:100%;
+    }
+    .task {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    }
+    .profiletask {
+    border-bottom: 2px solid;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: larger;
+    color: gray;
+    }
+    .lis {
+    list-style-type: none;
+    height: 30px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 17px;
+    }
+    .profilelinks {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    margin-left: 10px;
+    box-sizing: border-box;
+    }
+    .lis:hover {
+    background: linear-gradient(to right, white, #BC8F8F);
+    color: white;
+    border-left: 3px solid #BC8F8F;
+    box-sizing: border-box;
+    }
+    .ourbody{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    }
+    .details{
+    box-sizing: border-box;
+    border: 1px solid;
+    display: flex;
+    /* flex-direction: row; */
+    width:80%;
+    margin-left:5%;
+    margin-top:10px;
+    }
+.firstdiv
+  img.mainmg(src='/loginimg132.jpg' width='100%')
+  .maininfodiv
+    .navbardiv
+      p.Home
+        a.login(href='./home.html') Home
+      .optionsdiv
+        p.options
+          a.login(href='/partner-with-us') Add Restaurant
+        p.options
+          a.login(href='/investor-relations') Investor Relations
+        p.options
+          a.login(href='/dashboard') Dashboard
+h1.title Hello, #{okay["user"]}!
+.imgaboveborder
+img.mainmg(src='/loginimg133.jpg' width='100%')
+.ourbody
+  .profile
+    .task
+      p.profiletask ACTIVITY
+      li.lis
+        a.profilelinks(href= `/review/${okay["user"]}`) Reviews
+      li.lis
+        a.profilelinks(href='/photos') Photos
+      li.lis
+        a.profilelinks(href='/followers') Followers
+      li.lis
+        a.profilelinks(href='/Viewed') Recently Viewed
+      li.lis
+        a.profilelinks(href='/bookmarks') Bookmarks
+      li.lis
+        a.profilelinks(href='/blogs') Blog Posts
+    .task
+      p.profiletask ONLINE ORDERING
+      li.lis
+        a.profilelinks(href='/ordering') Order History
+      li.lis
+        a.profilelinks(href='/addresses') My addresses
+      li.lis
+        a.profilelinks(href='/favorite') Favorite Orders
+    .task
+      p.profiletask PAYMENTS
+      li.lis
+        a.profilelinks(href='/credits') Zomato Credits
+      li.lis
+        a.profilelinks(href='/managewallets') Manage Wallets
+      li.lis
+        a.profilelinks(href='/managecards') Manage Cards
+    .task
+      p.profiletask TABLE BOOKING
+      li.lis
+        a.profilelinks(href='/bookings') Your Bookings
+    .task
+      p.profiletask ACCOUNT SETTINGS
+      li.lis
+        a.profilelinks(href='/deleteAccount') Delete Account
+  .details
+    i hey, vachesava!

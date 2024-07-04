@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        .mainimg {
+            position: absolute;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px auto;
+
+        }
+
+        .firstdiv {
+            position: relative;
+        }
+
+        .maininfodiv {
+            width: 100%;
+            top: 2%;
+            position: absolute;
+        }
+
+        .navbardiv {
+            /* border:1px solid; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        .Home {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            text-align: center;
+            /* border: 1px solid; */
+            width: 40%;
+            box-sizing: border-box;
+        }
+
+        .optionsdiv {
+            /* border:1px solid; */
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .options {
+            /* border:1px solid; */
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+
+        .maindiv {
+            margin-top: 4%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        .mainhead {
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: wavy;
+            box-sizing: border-box;
+            font-size: 60px;
+            margin: 0px;
+        }
+
+        .mainsubhead {
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: wavy;
+            font-size: x-large;
+            box-sizing: border-box;
+            margin-top: 1%;
+        }
+
+        .fillinform {
+            box-sizing: border-box;
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .firstbutton {
+            background-color: white;
+            margin: 1%;
+            outline: 0;
+            grid-gap: 8px;
+            align-items: center;
+            /* background: 0 0; */
+            border: 1px solid #000;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-flex;
+            flex-shrink: 0;
+            font-size: 16px;
+            gap: 8px;
+            justify-content: center;
+            line-height: 1.5;
+            overflow: hidden;
+            padding: 12px 16px;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            transition: all .14s ease-out;
+            white-space: nowrap;
+
+        }
+
+        .firstbutton:hover {
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            /* transform: translate(-4px, -4px); */
+            background-color: white;
+        }
+
+        .firstbutton:focus-visible {
+            outline-offset: 1px;
+        }
+
+        .inputclass {
+            width: 260px;
+            height: 40px;
+            margin: 1%;
+            border:none;
+            background-color: transparent;
+            border-bottom: 2px solid white;
+            outline: none;
+            color:white;
+        }
+
+        .login {
+            color: white;
+            list-style: none;
+            text-decoration: none;
+        }
+        .imgsdiv{
+            display: flex;
+            box-sizing: border-box;
+            justify-content: space-evenly;
+        }
+        .signindiv{
+            margin-top: 6%;
+            box-sizing: border-box;
+        }
+        .signin{
+            text-decoration:underline;
+            color: white;
+        }
+        ::placeholder{
+            color: white;
+        }
+        .error{
+            font-family: 'Times New Roman', Times, serif;
+            font-style:unset;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="firstdiv">
+        <div class="imgsdiv">
+            <img class="mainmg" src="loginimg31.jpg" width="100%" height="auto">
+            <!-- <img class="mainmg" src="loginimg4.jpg" width="40%" height="100%">
+            <img class="mainmg" src="loginimg1.jpg" width="40%" height="100%"> -->
+        <div class="maininfodiv">
+            <div class="navbardiv">
+                <p class="Home"><a class="login" href="./home.html">Home</a></p>
+                <div class="optionsdiv">
+                    <p class="options"><a class="login" href="/partner-with-us">Add Restaurant</a></p>
+                    <p class="options"><a class="login" href="/investor-relations">Investor Relations</a></p>
+                    <p class="options"><a class="login" href="/login">Login/Signin</a></p>
+                </div>
+            </div>
+            <div class="maindiv">
+                <h1 class="mainhead"> Login </h1>
+                <!-- <p class="mainsubhead"> Discover the best food & drinks in Hyderabad</p> -->
+                <form class="fillinform" autocomplete="off" action="./info" method="post">
+
+                    <input class="inputclass" name="user" placeholder="Enter User Name">
+                    <br>
+
+                    <input class="inputclass" name="pwd" placeholder="Enter Password">
+                    <br>
+                    <button class="firstbutton">Login</button>
+
+                    <div class="signindiv"> Don't have an account? <a  class="signin" href="./signinfile">Signin</a> </div>
+                </form>
+                <h5 class="error">Check your credentials</h5>
+            </div>
+        </div>
+    </div>
+
+<!-- here, in form, inplace of action, we can also use onsubmit
+    for that we have a template to write in script, and mention the header
+    such as application/json or urlencoded.
+    video ref: 49th video -->
+
+</body>
+
+</html>

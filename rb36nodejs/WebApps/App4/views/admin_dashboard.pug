@@ -1,0 +1,18 @@
+html
+    head 
+        title Dashboard 
+    body 
+        a(href=`/admin/${okay._id}/makecourse`)  Create Course
+        br
+        a(href="/admin_logout")  Logout
+        br
+        h1 Admin #{okay.username}'s Dashboard
+        table(border="1")
+            tr 
+                th name 
+                th (viewmore)
+            each user in userokay 
+                tr 
+                    td= user["username"]
+                    td
+                        a(href=`/admin_dashboard/${user._id}`) view more

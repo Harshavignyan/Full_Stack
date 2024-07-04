@@ -1,0 +1,19 @@
+html
+    head 
+        title Dashboard 
+    body 
+        a(href=`/${okay._id}/courses`)  Courses 
+        br
+        a(href="/logout")  Logout
+        br
+        h1 #{okay.username}'s Dashboard
+        p Your courses:
+            table(border="1")
+                tr 
+                    th= "course_id"
+                    th= ""
+                each course in okay["courses"]
+                    tr 
+                        td= course 
+                        td 
+                            a(href=`/viewcourse/${course}`) view
