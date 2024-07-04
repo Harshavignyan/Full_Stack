@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+    <h1></h1>
+
+    <!--    let a = document.querySelector("h1")
+            undefined
+            a.innerText = "Hello DOM World!"
+            'Hello DOM World!'
+            let b = document.createElement("h1")
+            undefined
+            b.innerText = "Hello DOM world!"
+            'Hello DOM world!'
+            document.body.appendChild(b)
+            <h1>​Hello DOM world!​</h1>​
+            b.style.color = "red"
+            'red' 
+    -->
+
+    <div id="mydiv"></div>
+    <script>
+        
+        // 3rd qn:
+
+        // let namesList = ["ramesh", "suresh", "praveen", "gopi", "sunil"];
+        // let ul = document.createElement("ul");
+
+        
+
+        // namesList.forEach(name =>{
+        //     let li = document.createElement("li");
+        //     li.innerText = name;
+        //     ul.appendChild(li);
+        // })
+
+        // 4th qn:
+
+        // let numbersList = [11,12,13,14,15,16,17];
+        // let ul = document.createElement("ul");
+
+        // numbersList.forEach(number => {
+        //     let li = document.createElement("li");
+        //     li.innerText = number;
+        //     ul.appendChild(li);
+        // })
+
+        // 5th qn:
+
+        // let div = document.querySelector("#mydiv");
+
+        // var students = [
+        //                         {
+        //                         name:'jaya',
+        //                         gender:'female',
+        //                         place:'gachibowli',
+        //                         },
+        //                         {
+        //                         name:'dasu',
+        //                         gender:'male',
+        //                         place:'kphb'
+        //                         },
+        //                         {
+        //                         name:'swati',
+        //                         gender:'female',
+        //                         place:'pune'
+        //                         },
+        //                         {
+        //                         name:'pallavi',
+        //                         gender:'female',
+        //                         place:'assam'
+        //                         },
+        //                         {
+        //                         name:'kiran',
+        //                         gender:'male',
+        //                         place:'kondapur'
+        //                         },
+        //                         {
+        //                         name:'thirumala',
+        //                         gender:'male',
+        //                         place:'madhapur'
+        //                         },
+        //                         {
+        //                         name:'priya',
+        //                         gender:'female',
+        //                         place:'hitech'
+        //                         },
+        //                     ];
+
+        // let table = document.createElement("table");
+        //  table.style.border = "1px solid";
+         
+
+        // let tr1 = document.createElement("tr");
+
+        // let th1 = document.createElement("th");
+        // let th2 = document.createElement("th");
+        // let th3 = document.createElement("th");
+
+        // tr1.appendChild(th1);
+        // tr1.appendChild(th2);
+        // tr1.appendChild(th3);
+
+        // table.appendChild(tr1);
+
+        // th1.innerText = "Name";
+        // th2.innerText = "Gender";
+        // th3.innerText = "Place";
+
+        // students.forEach(student => {
+        //     let td1 = document.createElement("td");
+        //     td1.innerText = student.name;
+        //     let td2 = document.createElement("td");
+        //     td2.innerText = student.gender;
+        //     let td3 = document.createElement("td");
+        //     td3.innerText = student.place;
+
+        //     let tr2 = document.createElement("tr");
+
+            
+        //     tr2.appendChild(td1);
+        //     tr2.appendChild(td2);
+        //     tr2.appendChild(td3);
+
+        //     table.appendChild(tr2);
+
+        // });
+
+        // // table.style.border = "1px solid black";
+
+        // div.appendChild(table);
+
+        // 6th qn:
+
+        let div = document.querySelector("#mydiv");
+
+        let a = ["https://images.unsplash.com/photo-1484402628941-0bb40fc029e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1601694090572-98694c8b3b85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fHw%3D"
+        ];
+
+        a.forEach(a => {
+            let d = document.createElement("div");
+            let i = document.createElement("img");
+            i.src = a;
+            d.appendChild(i);
+            div.appendChild(d);
+        });
+
+        div.style.display = "flex";
+        
+
+    </script>
+</body>
+</html>

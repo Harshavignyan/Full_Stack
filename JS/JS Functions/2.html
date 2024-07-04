@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2</title>
+    </head>
+    <body>
+        <script>
+
+            function great(x,y,z){
+                if(x > y && x > z){
+                    return x
+                }
+                else{
+                    if (y > z){
+                        return y
+                    }
+                    else{
+                        return z
+                    }
+                }
+            }
+
+            let a = +prompt("enter the first num: ");
+            let b = +prompt("enter the second num: ");
+            let c = +prompt("enter the third num: ");
+
+            console.log(great(a,b,c));
+        </script>
+    </body>
+</html>

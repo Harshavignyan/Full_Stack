@@ -1,0 +1,100 @@
+/* <style> */
+            .body{
+                padding:0px;
+            }
+            .mydiv{
+                position: relative;
+                display: flex;
+            }
+            .img{
+                /* border: 1px solid; */
+                box-sizing: border-box;
+                width:100%;
+                height:717px;
+                position: inherit;
+                margin-left:0px;
+                margin-right:0px;
+                padding:0px;
+            }
+            .matter{
+                
+                left: 5%;
+                top: 20%;
+                /* transform: translateX(-50%); */
+                position: absolute;
+                /* display:flex; */
+                /* border: 1px solid; */
+                box-sizing: border-box;
+                width:400px;
+                height:auto;
+                margin: 0px;
+                flex-direction: column;
+            }
+            .h3{
+                /* display:flex; */
+                color:mintcream;
+                /* border: 1px solid; */
+                box-sizing: border-box;
+                margin: 0px;
+                height: auto;
+                font-family:monospace;
+                font-size: 28px;
+                /* justify-content: center; */
+                align-items: center;
+            }
+            .p{
+                /* display: flex; */
+                /* border: 1px solid; */
+                /* height: 60px; */
+                color:mintcream;
+                box-sizing: border-box;
+                font-family:monospace;
+                font-size: 16px;
+                /* justify-content: center; */
+                align-items: center;
+            }
+            .button{
+                /* display: inline-block; */
+                box-sizing: border-box;
+                border: none;
+                /* background-color: black; */
+            }
+            .one:hover{
+                cursor:pointer;
+                transform: scale(1.08);
+                transition: transform 0.1s;
+            }
+            .one{
+                border-style:groove;
+                background-color: #362819;
+                color:mintcream;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+            .two{
+                border-style:groove;
+                background-color: #362819;
+                color:mintcream;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+            .two:hover{
+                cursor:pointer;
+                transform: scale(1.08);
+                transition: transform 0.1s;
+            }
+            @media (max-width:1150px) {
+                .mydiv img{
+                    width:0px;
+                    height:0px;
+                }
+                .mydiv h3{
+                    margin-top: 35.5%;
+                    width:100%;
+                    color:firebrick;
+                }
+                .mydiv p{
+                    width:100%;
+                    color:firebrick;
+                }
+            }
+            
+        /* </style> */

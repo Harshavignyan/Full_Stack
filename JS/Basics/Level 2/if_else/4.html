@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>4</title>
+    </head>
+    <body>
+        <pre>
+            Write a program to print the given three numbers in descending order
+        </pre>
+        <script>
+            var a = +prompt("enter the first value: ");
+            var b = +prompt("enter the second value: ");
+            var c = +prompt("enter the third value: ");
+
+            if (a > b){
+                if (a > c){
+                    if (b > c){
+                        document.write(a + "," + b + "," + c);
+                    }
+                    else{
+                    document.write(a + "," + c + "," + b);
+                    }
+                }
+                else{
+                    if (c > b){
+                        document.write(c + "," + a + "," + b);
+                    }
+                    else{
+                        document.write(a + "," + c + "," + b);
+                    }
+                }
+            }
+            else{
+                if (b > c){
+                    if(a > c){
+                        document.write(b + "," + a + "," + c);
+                    }
+                    else{
+                        document.write(b + "," + c + "," + a);
+                    }  
+                }
+                else{
+                    document.write(c + "," + b + "," + a);
+                }
+            }
+            
+        </script>
+    </body>
+</html>

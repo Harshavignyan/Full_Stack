@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>41</title>
+    </head>
+    <body>
+        <pre>If the marks obtained by a student in five different subjects
+            are input through the keyboard, find out the aggregate marks and
+            percentage marks obtained by the student. Assume that the maximum
+            marks that can be obtained by a student in each subject is 100.
+        </pre>
+        <script>
+            const a1 = Number(prompt("enter the 1st value: "));
+            const a2 = Number(prompt("enter the 2nd value: "));
+            const a3 = Number(prompt("enter the 3rd value: "));
+            const a4 = Number(prompt("enter the 4th value: "));
+            const a5 = Number(prompt("enter the 5th value: "));
+
+            const agg = a1+a2+a3+a4+a5;
+            document.write("aggregate marks = "+ agg + "<br>");
+
+            const p = (agg/500) * 100;
+            document.write("percentage marks = "+ p + "%<br>");
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title> Forms level 2 Example 1</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="2"> Pizza Shop 2.0</th>
+        </tr>
+        <tr>
+            <td> Name </td>
+            <td> 
+                <form>
+                    <label> <input type="text"></label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Pizza Topping
+            </td>
+            <td>
+                <form>
+                    <input type="radio" id="Topping" />Supreme <br>
+                    <input type="radio" id="Topping" />Vegetarian <br>
+                    <input type="radio" id="Topping" />Hawaiian 
+
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Pizza Sauce
+            </td>
+            <td>
+                <form>
+                    <select>
+                        
+                            <option value="Tomato"> Tomato </option>
+                            <option value="Chilli"> Chilli </option>
+                            <option value="Tamrind"> Tamrind </option>
+                    </select>    
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Optional Extras
+            </td>
+            <td>
+                <form>
+                    <input type="checkbox" id="extras" /> Extra Cheese
+                    <input type="checkbox" id="extras" /> Gluten Free Base
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form>
+                    <label for="delivery"> Delivery Instructions: </label> <br>
+                        <textarea rows="6" cols="48"></textarea>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form>
+                    <input type="submit" value="Send my Order">
+                </form>
+            </td>
+        </tr>
+
+    </table>
+</body>

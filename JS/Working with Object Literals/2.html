@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2</title>
+    </head>
+    <body>
+        <script>
+            var marks = {
+                                "maths" : 34,
+                                "english" : 56,
+                                "science": 32,
+                                "hindi" : 75,
+                                "social science": 65
+                            };
+
+            // Print the marks of all the subjects.
+
+            for (var i in marks){
+                document.write(marks[i] + "<br>");
+            }
+
+            // Print the names of all the subjects from the given object.
+
+            for (var i in marks){
+                document.write(i + "<br>");
+            }
+
+            // Count the number of subjects from the given object.
+
+            var count = 0;
+            for (var i in marks){
+                count++;
+            }
+
+            document.write("the total number of subjects are: " + count + "<br>");
+
+            // Print the percentage of the marks of the student.
+
+            var tot = 0;
+            for (var a in marks){
+                tot += marks[a];
+            }
+            document.write("total marks:" + tot + "<br>");
+            var val = tot/count;
+            var per = val * 100;
+            document.write(per + "<br>");
+
+            // Print only those subjects where the student scored more than 35.
+
+            for (var i in marks){
+                if (marks[i] > 35){
+                    document.write(i + "<br>");
+                }
+            }
+
+            // Print the pass/fail status of the subjects provided 35 is the pass mark.
+
+            for (var i in marks){
+                if (marks[i] > 35){
+                    document.write("passed in: "+ i + "<br>");
+                }
+                else{
+                    document.write("failed in: "+ i + "<br>");
+                }
+            }
+
+            // Print only the passed subjects.
+
+            for (var i in marks){
+                if (marks[i] > 35){
+                    document.write("passed in: "+ i + "<br>");
+                }
+            }
+
+            // Count the number of passed subjects.
+            var cuz = 0;
+
+            for (var i in marks){
+                if (marks[i] > 35){
+                    cuz += 1;
+                }
+            }
+
+            document.write(cuz + "<br>");
+
+            // Print only the failed subjects.
+
+            for (var i in marks){
+                if (marks[i] < 35){
+                    document.write("failed in: "+ i + "<br>");
+                }
+                
+            }
+
+            // Count the number of failed subjects.
+
+            var cux = 0;
+
+            for (var i in marks){
+                if (marks[i] < 35){
+                    cux += 1;
+                }
+                
+            }
+
+            document.write(cux + "<br>");
+
+            // Print the least scored subject.
+
+            var least = marks["maths"];
+
+            for (var i in marks){
+                if(marks[i] < least){
+                    least = marks[i];
+                }
+            }
+
+            document.write(least + "<br>");
+
+            // Print the highest scored subject.
+
+            var heighst = marks["maths"];
+
+            for (var i in marks){
+                if(marks[i] > least){
+                    heighst = marks[i];
+                }
+            }
+
+            document.write(heighst + "<br>");
+
+            // Check whether the student has passed in all the subjects or not.
+
+            var cua = 0
+
+            for(var i in marks){
+                if(marks[i] > 35){
+                    cua += 1;
+                }
+            }
+
+            if(cua == 5){
+                document.write("passed all" + "<br>");
+            }
+            else{
+                document.write("not passed in all" + "<br>");
+            }
+
+            // Take the subject name from the student through prompt box and print the subject marks and pass/fail status.
+
+            var ip = prompt("enter the subject name: ");
+
+            switch(ip){
+
+                case "maths": document.write(marks["maths"] + "<br>");
+                break;
+
+                case "english": document.write(marks["english"] + "<br>");
+                break;
+
+                case "science": document.write(marks["science"] + "<br>");
+                break;
+
+                case "hindi": document.write(marks["hindi"] + "<br>");
+                break;
+
+                case "social science": document.write(marks["social science"] + "<br>");
+                break;
+
+                default: document.write("not a subject");
+                break;
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addNewPostJS</title>
+</head>
+<body>
+    <form onsubmit="addNewPost(event)">
+
+        <input type="text"  name="title" id="title">
+        <br>
+        <input type="text" name="author" id="author">
+        <br>
+        <button>Add Post</button>
+
+    </form>
+
+    <script>
+
+        function addNewPost(ev){
+            ev.preventDefault();
+            var newPost = {
+                title:document.getElementById("title").value,
+                author:document.getElementById("author").value,
+            }
+
+            // console.log(newPost);
+
+            fetch("http://localhost:3000/posts",{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify(newPost)
+            })
+        }
+
+    </script>
+</body>
+</html>

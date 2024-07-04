@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showAllPosts</title>
+</head>
+<body>
+    <h1>Show All Posts</h1>
+    <ul id="uu">
+
+    </ul>
+
+    <script>
+
+        fetch("http://localhost:3000/posts")
+        .then(function(res){
+            res.json().then(function(data){
+                // console.log(data)
+                data.forEach(function(p){
+                    var nli = document.createElement("li");
+                    nli.innerHTML = p.title;
+                    var delbtn = document.createElement("button");
+                    delbtn.innerHTML = "del";
+                    delbtn.onclick = function(){
+                        fetch("http://localhost:3000/posts"+p.id,{
+                            method:"DELETE"
+                        })
+                        .then(function(){
+                            window.location.reload()
+                        })
+                    }
+                    nli.appendChild(delbtn);
+                    document.getElementById("uu").appendChild(nli)
+                })
+            })
+        })
+    </script>
+</body>
+</html>

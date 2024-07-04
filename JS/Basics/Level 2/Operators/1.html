@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1</title>
+    </head>
+    <body>
+        <pre>
+            If a five-digit number is input through the keyboard,
+            write a program to calculate the sum of its digits.
+            (Hint: Use the modulus operator ‘%’)
+        </pre>
+        <script>
+            var a = Number(prompt("Enter a 5 digit number: "));
+            var c = a % 10;
+            a = parseInt(a / 10);
+            var sum = 0 + c;
+            c = a % 10;
+            a = parseInt(a / 10);
+            sum = sum + c;
+            c = a % 10;
+            a = parseInt(a / 10);
+            sum = sum + c;
+            c = a % 10;
+            a = parseInt(a / 10);
+            sum = sum + c;
+            c = a % 10;
+            a = parseInt(a / 10);
+            sum = sum + c;
+            document.write("sum of them is = " + sum);
+        </script>
+    </body>
+</html>

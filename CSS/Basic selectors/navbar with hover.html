@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hover</title>
+        <style>
+            .div1{
+                display: inline-block;
+                width:100%;
+                background-color: darkred;
+            }
+            h3{
+                /* border:1px solid black; */
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 125%;
+                text-align: center;
+                color:#FFF5EE;
+                padding:20px;
+                display: inline-block;
+                width:10%;
+                margin:-2px;
+            }
+            h3:hover{
+                background-color:darksalmon;
+            }
+            .img{
+                /* border: 1px solid white; */
+                vertical-align: middle;
+                /* margin:auto; */
+                /* margin-top:auto; */
+                /* margin-bottom: auto; */
+                margin-left: 20px;
+                margin-right:20px;
+            }
+            div>.img:hover{
+                display: inline-block;
+                transition: transform .2s;
+                transform: scale(1.25);
+                /* width=100%;
+                padding:; */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            
+            <img class="img"width="150px" height="50px" src="https://edupoly.in/common/assets/edupoly-logo-dark.png">
+            <h3>Home</h3>
+            <h3>About</h3>
+            <h3>Contact</h3>
+            <h3>Careers</h3>
+            <h3>Blog</h3>
+            <h3>Services</h3>
+        </div>
+        
+    </body>
+</html>

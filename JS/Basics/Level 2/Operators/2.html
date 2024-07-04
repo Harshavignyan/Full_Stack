@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>12</title>
+    </head>
+    <body>
+        <pre>
+            If a five-digit number is input through the keyboard, write a program to reverse the number.
+        </pre>
+        <script>
+            var x = +prompt("enter a five digit value to reverse it: ");
+            var c = 0;
+            // var ans;
+
+            for(var i = 0; i < 5; i++){
+                c = x % 10;
+                x = parseInt(x / 10);
+                document.write(c);
+            }
+        </script>
+    </body>
+</html>

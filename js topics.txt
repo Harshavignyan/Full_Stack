@@ -1,0 +1,20 @@
+array of objects
+strings
+string methods
+array methods
+js funcitons
+js function types
+js map,filter, reduce methods
+array methods advanced
+js DOM foundation
+js DOM UI generation
+js events
+js event handling 
+js form data
+js hoisting
+js DOM eventes closure binding
+js call back promise
+js API calls
+js promise async await
+let const arrow funcitons deffault params
+es6

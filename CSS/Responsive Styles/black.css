@@ -1,0 +1,108 @@
+.black{
+    display:flex;
+    /* border:1px solid black; */
+    box-sizing: border-box;
+    width:100%;
+    height:5000px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.violet{
+    display: flex;
+    /* border:1px solid violet; */
+    box-sizing: border-box;
+    width:100%;
+    height:420px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.red{
+    display:flex;
+    /* border:1px solid red; */
+    box-sizing: border-box;
+    width:30%;
+    height:100%;
+    flex-direction: column;
+}
+.blue{
+    display: flex;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    width:100%;
+    height:80%;
+    align-items: center;
+}
+.blockimg{
+    border-radius: 5px;
+}
+.blockimg:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.green{
+    display: flex;
+    /* border:1px solid green; */
+    box-sizing: border-box;
+    flex-direction: row;
+    width:100%;
+    height:20%;
+}
+.lyellow{
+    display: flex;
+    /* border:1px solid yellow; */
+    box-sizing: border-box;
+    flex-direction: column;
+    width:80%;
+    height:100%;
+}
+.or1{
+    display:flex;
+    /* border: 1px solid orange; */
+    box-sizing: border-box;
+    width:100%;
+    height:65%;
+    align-items:center;
+}
+.orh{
+    font-family:Garamond, serif;
+    font-size: x-large;
+}
+.orp{
+    font-family:Garamond, serif;
+    font-size: large;
+    font-weight:lighter;
+    color:rgb(94, 93, 93);
+}
+.or2{
+    display:flex;
+    /* border: 1px solid orange; */
+    box-sizing: border-box;
+    width:100%;
+    height:35%;
+    align-items: center;
+}
+.ryellow{
+    display: flex;
+    /* border:1px solid yellow; */
+    box-sizing: border-box;
+    flex-direction: column;
+    width:20%;
+    height:100%;
+}
+.or3{
+    display:flex;
+    /* border: 1px solid orange; */
+    box-sizing: border-box;
+    width:100%;
+    height:65%;
+    justify-content: center;
+    align-items: center;
+}
+.or4{
+    display:flex;
+    /* border: 1px solid orange; */
+    box-sizing: border-box;
+    width:100%;
+    height:35%;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+</head>
+<body>
+
+    <div id="mydiv"></div>
+    
+
+    <script>
+        var students = [
+                                {
+                                name:'jaya',
+                                gender:'female',
+                                place:'gachibowli',
+                                },
+                                {
+                                name:'dasu',
+                                gender:'male',
+                                place:'kphb'
+                                },
+                                {
+                                name:'swati',
+                                gender:'female',
+                                place:'pune'
+                                },
+                                {
+                                name:'pallavi',
+                                gender:'female',
+                                place:'assam'
+                                },
+                                {
+                                name:'kiran',
+                                gender:'male',
+                                place:'kondapur'
+                                },
+                                {
+                                name:'thirumala',
+                                gender:'male',
+                                place:'madhapur'
+                                },
+                                {
+                                name:'priya',
+                                gender:'female',
+                                place:'hitech'
+                                },
+                            ];
+
+        let ul = document.createElement("ul");
+        
+        students.forEach(yup => {
+            let li = document.createElement("li");
+            li.innerText = yup.name;
+
+            li.className = "myli";
+
+            ul.appendChild(li);
+        });
+
+        
+
+        let div = document.querySelector("#mydiv");
+        div.appendChild(ul);
+    </script>
+</body>
+</html>

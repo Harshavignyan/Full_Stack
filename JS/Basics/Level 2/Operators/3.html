@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3</title>
+    </head>
+    <body>
+        <pre>
+
+            If a four-digit number is input through the
+            keyboard, write a program to obtain the sum of the
+            first and last digit of this number.
+            
+        </pre>
+        <script>
+            var x = +prompt("enter a four digit value: ");
+
+            var first;
+            var last = x % 10;
+            
+            for (var i = 0; i<4; i++){
+                first = x % 10;
+                x = parseInt(x/10);
+            }
+
+            var sum = last + first;
+            document.write("The sum of first and last digits of the 4 digit number is: " + sum);
+        </script>
+    </body>
+</html>

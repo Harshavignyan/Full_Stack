@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5</title>
+    </head>
+    <body>
+        <pre>
+
+            A cashier has currency notes of denominations 10, 50 and 100. If the amount to be withdrawn is input through the keyboard in hundreds, find the total number of currency notes of each denomination the cashier will have to give to the withdrawer.
+
+
+        </pre>
+
+        <script>
+            var amount = +prompt("Enter the amount: ");
+
+            var a = parseInt(amount / 100);
+            document.write("Required notes of Rs. 100  :" + a + "<br>");
+        
+            var b = parseInt((amount % 100) / 50);
+            document.write("Required notes of Rs. 50   :" + b + "<br>");
+            
+            var c = parseInt((((amount % 100) % 50) / 10));
+            document.write("Required notes of Rs. 10   :" + c + "<br>");
+            
+            var d = parseInt((((amount % 100) % 50) % 10));
+            document.write("Amount still remaining Rs. :" + d + "<br>");
+        </script>
+    </body>
+</html>

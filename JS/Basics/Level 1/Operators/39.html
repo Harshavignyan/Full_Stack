@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>39</title>
+    </head>
+    <body>
+        <pre>Ramesh’s basic salary is input through the keyboard.
+            His dearness allowance is 40% of basic salary, and house
+            rent allowance is 20% of basic salary. Write a program to
+            calculate his gross salary.
+        </pre>
+        <script>
+            const a = Number(prompt("enter the salary value: "));
+            
+            const dear = a * 0.4;
+            const rent = a * 0.2;
+
+            const ans = a - (dear+rent);
+            document.write("gross salary is = " + ans);
+            
+        </script>
+    </body>
+</html>

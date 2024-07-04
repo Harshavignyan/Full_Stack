@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>40</title>
+    </head>
+    <body>
+        <pre>The distance between two cities (in km.) is input through
+            the keyboard. Write a program to convert and print this
+            distance in meters, feet, inches and centimeters.
+        </pre>
+        <script>
+            const a = Number(prompt("enter the dist value: "));
+            
+            var m = a * 1000;
+            document.write("in m = " + m + "<br>");
+
+            var f = a * 3280.8398950131;
+            document.write("in f = " + f + "<br>");
+            
+            var i = a * 39370.1;
+            document.write("in i = " + i + "<br>");
+
+            var c = a * 100000;
+            document.write("in c = " + c + "<br>");
+            
+            
+        </script>
+    </body>
+</html>

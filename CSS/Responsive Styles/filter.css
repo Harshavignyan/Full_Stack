@@ -1,0 +1,113 @@
+.myfilter{
+    display: flex;
+    padding:2%;
+    /* border:1px solid; */
+    box-sizing: border-box;
+    height:60px;
+    justify-content: space-evenly;
+}
+.part1{
+    /* border: 1px solid; */
+    flex-grow: 1;
+    flex-direction: column;
+    margin:4px;
+    box-sizing: border-box;
+}
+.category{
+    /* border:1px solid; */
+    margin:4px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:rgb(130, 129, 129);
+}
+.catb{
+    /* border: 1px solid; */
+    font-size: 20px;
+    /* margin:2px; */
+    box-sizing: border-box;
+}
+.part2{
+    /* border: 1px solid; */
+    display:flex;
+    flex-direction: column;
+    width:20%;
+    justify-content: space-between;
+    /* padding:10px; */
+    margin:4px;
+    box-sizing: border-box;
+}
+.tech{
+    /* border: 1px solid; */
+    margin:4px;
+    text-decoration: none;
+    color:rgb(130, 129, 129);
+    
+}
+.techb{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /* border:1px solid; */
+
+}
+/* .b{
+    font-size: 20px;
+} */
+.part3{
+    /* border: 1px solid; */
+    display:flex;
+    flex-direction: column;
+    width:20%;
+    justify-content: space-between;
+    margin:4px;
+}
+.price{
+    /* border:1px solid; */
+    margin:4px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:rgb(130, 129, 129);
+}
+.priceb{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    box-sizing: border-box;
+}
+.b1{
+    border:none;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: white;
+    cursor:pointer;
+    color:#8D021F;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.b1:hover{
+    background-color: #f1f1f1;
+}
+.b2{
+    border:none;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: white;
+    cursor:pointer;
+    color:#8D021F;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.b2:hover{
+    background-color: #f1f1f1;
+}
+.b3{
+    border:none;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: white;
+    cursor:pointer;
+    color:#8D021F;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.b3:hover{
+    background-color: #f1f1f1;
+}

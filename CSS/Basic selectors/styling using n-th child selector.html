@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Styling using the n-th child selector
+        </title>
+        <style>
+            table{
+                
+                border: 1px solid balck;
+                border-collapse: collapse;
+                width:100%;
+                
+            }
+            thead th{
+                text-align: center;
+            }
+            tbody>tr:nth-child(3n+1) {
+                background-color:cadetblue;
+            }
+            tbody>tr:nth-child(3n+2){
+                background-color: aqua;
+            }
+            tbody>tr:nth-child(3n+3){
+                background-color: aliceblue;
+            }
+            tbody th{
+                text-align:justify;
+            }
+            tbody td{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table border= "1" ;cellpadding="auto" cellspacing="auto">
+            <thead>
+                <tr>
+                    <th>CSS Property</th>
+                    <th>Internet Explorer</th>
+                    <th>FireFox</th>
+                    <th>Chrome</th>
+                    <th>Safari</th>
+                    <th>Opera</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Border Radius</th>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <th>Box Shadow</th>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <th> CSS Animations</th>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <th> CSS Animations</th>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <th> CSS Animations</th>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <th> CSS Animations</th>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <th> CSS Animations</th>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <th> CSS Animations</th>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <th> CSS Animations</th>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Adv Response 2 </title>
+        <style>
+            .mydiv{
+                display: flex;
+                /* border: 1px solid; */
+                box-sizing: border-box;
+                width:auto;
+                height: 720px;
+                flex-direction: row;
+                flex-wrap: no wrap;
+            }
+            .matter{
+                display:flex;
+                /* border: 1px solid; */
+                box-sizing: border-box;
+                width:100%;
+                height:auto;
+                margin: 0px;
+                flex-direction: column;
+            }
+            .h3{
+                display:flex;
+                /* border: 1px solid; */
+                box-sizing: border-box;
+                margin: 0px;
+                height: auto;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 28px;
+                justify-content: center;
+                align-items: center;
+            }
+            .p{
+                display: flex;
+                /* border: 1px solid; */
+                /* height: 60px; */
+                box-sizing: border-box;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 16px;
+                justify-content: center;
+                align-items: center;
+            }
+            .button{
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            
+            @media  (max-width:1300px) {
+                .matter{
+                    width:100%;
+                }
+                .mydiv img{
+                    width:600px;
+                    height:400px;
+                }
+            }
+            @media  (max-width:1200px) {
+                .matter{
+                    width:100%;
+                }
+                .mydiv img{
+                    width:400px;
+                    height:200px;
+                }
+            }
+            @media  (max-width:1000px) {
+                .matter{
+                    width:100%;
+                }
+                .mydiv img{
+                    width:300px;
+                    height:150px;
+                }
+            }
+            @media  (max-width:800px) {
+                .matter{
+                    width:100%;
+                }
+                .mydiv img{
+                    width:0px;
+                    height:0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mydiv">
+            <div class="matter">
+                <h3 class="h3">Build your next project faster with SB UI Kit Pro</h3>
+                <p class="p"> Welcome to SB UI Kit Pro, A toolkit for building
+                    beautiful web interfaces, created by the development team
+                    at the start bootstrap.
+                </p>
+                <div class="button">
+                    <button class="one" value="One">One</button>
+                    <button class="two" value="Two">Two</button>
+                </div>
+            </div>
+            <div class="img">
+                <img width="1100px" height="720px" class="pic" src="https://fronty.com/static/uploads/1.09-31.09/Best_Image_to_Code_Converters.jpg" alt="">
+            </div>
+        </div>
+    </body>
+
+</html>

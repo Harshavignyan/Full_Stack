@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>4</title>
+    </head>
+    <body>
+        <script>
+
+            function fact(x){
+
+                if (x == 1){
+                    return 1
+                }
+                return x * fact(x-1)
+            }
+
+
+            let a = +prompt("enter the value: ");
+
+            console.log(fact(a));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5</title>
+    </head>
+    <body>
+        <pre>
+            Write a program to take marks of three subjects and print the grade of student
+        </pre>
+        <script>
+            var a1 = +prompt("enter the 1st score out of 100: ");
+            var a2 = +prompt("enter the 2nd score out of 100: ");
+            var a3 = +prompt("enter the 3rd score out of 100: ");
+            var a4 = +prompt("enter the 4th score out of 100: ");
+            var a5 = +prompt("enter the 5th score out of 100: ");
+
+            var sum = (a1+a2+a3+a4+a5)/5;
+
+            if (sum > 35){
+                if(sum > 60){
+                    if (sum > 80){
+                        if (sum > 95){
+                            document.write("A");
+                        }
+                        else{
+                            document.write("B");
+                        }
+                    }
+                    else{
+                        document.write("C");
+                    }
+                }
+                else{
+                    document.write("D");
+                }
+            }
+            else{
+                document.write("what are you living for????");
+            }
+        </script>
+    </body>
+</html>

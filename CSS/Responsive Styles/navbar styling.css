@@ -1,0 +1,96 @@
+body{
+    margin:0px;
+}
+.a{
+    text-decoration: none;
+    color:black;
+}
+.navbar{
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    height:105px;
+    display: flex;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    margin-top:-10px;
+    padding:20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.logo{
+    display:flex;
+    /* border: 1px solid; */
+    width:100px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.logotext{
+    display:flex;
+    font-family:monospace;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    /* border: 1px solid; */
+    width:200px;
+    height: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+.otherbuttons{
+    font-family: monospace;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:110px;
+    /* border: 1px solid; */
+    height: 100%;
+    cursor: pointer;
+    color:rgb(130, 129, 129);
+    text-decoration: none;
+}
+.rightblock{
+    flex-grow: 1;
+    /* border: 1px solid; */
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+.blog{
+    font-family: monospace;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width:110px; */
+    /* border: 1px solid; */
+    height: 100%;
+    margin:2%;
+    color:rgb(130, 129, 129);
+    text-decoration: none;
+}
+.login{
+    font-family: monospace;
+    /* font-size: small; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width:110px; */
+    /* border: 1px solid; */
+    margin:2%;
+    
+
+}
+.loginb{
+    box-sizing: border-box;
+    background-color: crimson;
+    border-style: none;
+    border-radius: 3px;
+    font-size: large;
+    color:whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+}

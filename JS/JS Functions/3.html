@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3</title>
+    </head>
+    <body>
+        <script>
+
+            function order(x,y,z){
+                if(x < y && x < z){
+                    if(y < z){
+                        console.log(x,y,z)
+                    }
+                    else{
+                        console.log( x,z,y)
+                    }
+                }
+                else{
+                    if (y < z){
+                        if (x > z){
+                            console.log( y,x,z)
+                        }
+                    }
+                    else{
+                        console.log( z,y,x)
+                    }
+                }
+            }
+
+            let a = +prompt("enter the first value: ");
+            let b = +prompt("enter the second num: ");
+            let c = +prompt("enter the third num: ");
+
+            // cosole.log(order(a,b,c));
+            order(a,b,c);
+        </script>
+    </body>
+</html>

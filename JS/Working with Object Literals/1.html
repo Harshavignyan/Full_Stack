@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1</title>
+    </head>
+    <body>
+
+        <script>
+             var person = {
+                                "firstName" : "Harry",
+                                "lastName" : "Potter",
+                                "age": 30,
+                                "gender": "male",
+                                "skill" : "ReactJS",
+                                "expertise": "Beginner"
+                            };
+
+            document.write(person["firstName"] + "<br>");
+            document.write(person["lastName"] + "<br>");
+
+            var sol ="";
+            
+            for (var i in person){
+                if (i == "firstName"){
+                    sol += person[i];
+                }
+                else if (i == "lastName"){
+                    sol += person[i]
+                }
+            };
+            
+            document.write(sol + "<br>");
+
+            if (person["age"] > 18){
+                document.write("true")
+            }
+            else{
+                document.write("false")
+            }
+                            
+        </script>
+    </body>
+</html>

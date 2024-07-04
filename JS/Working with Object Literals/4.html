@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            4
+        </title>
+    </head>
+    <body>
+        <script>
+             var people = [
+                            {
+                            "firstname": "praveen",
+                            "lastname": "gubbala",
+                            "age": 36,
+                            "gender": "male",
+                            "city": "hyd",
+                            "salary": 10000
+                            },
+                            {
+                            "firstname": "srikanth",
+                            "lastname": "gubbala",
+                            "age": 32,
+                            "gender": "male",
+                            "city": "bengaluru",
+                            "salary": 20000
+                            },
+                            {
+                            "firstname": "pradeep",
+                            "lastname": "reddy",
+                            "age": 21,
+                            "gender": "male",
+                            "city": "hyd",
+                            "salary": 30000
+                            },
+                            {
+                            "firstname": "mounika",
+                            "lastname": "mudiraj",
+                            "age": 20,
+                            "gender": "female",
+                            "city": "nalgonda",
+                            "salary": 30000
+                            },
+                            {
+                            "firstname": "nikhil",
+                            "lastname": "m",
+                            "age": 22,
+                            "gender": "male",
+                            "city": "guntur",
+                            "salary": 2000
+                            },
+                            {
+                            "firstname": "riya",
+                            "lastname": "bhadouria",
+                            "age": 14,
+                            "gender": "female",
+                            "city": "indore",
+                            "salary": 40000
+                            }
+                            ];
+                        
+                            // Print all the firstnames.
+
+                            for (var i in people){
+                                
+                                    console.log(people[i].firstname);
+                                
+                            }
+
+                            // Print all the full names.
+
+                            for (var i in people){
+                                console.log(people[i].firstname + " " + people[i].lastname);
+                            }
+
+                            // Print only those names whose age is more than 25.
+
+                            for (var i in people){
+                                if(people[i].age > 25){
+                                    console.log("age > 25" + " " + people[i].firstname);
+                                }
+                            }
+
+                            // Print all female names.
+
+                            for(var i in people){
+                                if(people[i].gender == "female"){
+                                    console.log("female names: " + " " + people[i].firstname);
+                                }
+                            }
+
+                            // Print only those names whose salary is more than 30000 and increase their salaries by 15%.
+
+                            for(var i in people){
+                                if(people[i].salary > 30000){
+                                    console.log("people salary > 30000: " + " " + people[i].firstname);
+                                }
+                            }
+
+                            // Using prompt, print only those names whose city is "hyd".
+
+                            var ci = prompt("enther the city: ")
+                            if(ci == "hyd"){
+                                for(var i in people){
+                                    if(people[i].city == "hyd"){
+                                        console.log("city is hyd and his/her name: " + " " + people[i].firstname);
+                                    }
+                            }
+                            }
+                            else{
+                                console.log("entered city is not hyd, so no other names");
+                            }
+
+                            // Print the total salary of all the people.
+
+                            var saa = 0;
+
+                            for(var i in people){
+                                
+                                    saa += people[i].salary;
+                                
+                            }
+                            console.log("the total salary of all the people: " + " " + saa);
+
+                            // Print all the female names.
+
+                            for(var y in people){
+                                if(people[i].gender == "female"){
+                                    console.log("all the female names: " + " " + people[i].firstname);
+                                }
+                            }
+
+
+                            
+        </script>
+    </body>
+</html>
