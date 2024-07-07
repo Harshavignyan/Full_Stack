@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display variable value is positive or negative in JSX</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="d3"></div>
+
+    <script type="text/babel">
+        var a = 10
+
+        var jh1 = <h1>value is {a} : {a>0 ? "Positive" : "Negative"}</h1>
+
+        ReactDOM.render(jh1, document.getElementById("d3"))
+
+    </script>
+</body>
+
+</html>

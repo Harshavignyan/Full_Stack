@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display different images conditionally JSX</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="d3"></div>
+
+    <script type="text/babel">
+
+        var a = +prompt();
+
+        var jh1 = <div>{a%2 == 0 ? (<img src="https://c4.wallpaperflare.com/wallpaper/353/682/450/naruto-shippuuden-uzumaki-naruto-masashi-kishimoto-new-generation-wallpaper-preview.jpg"></img>) : (<img src="https://c4.wallpaperflare.com/wallpaper/370/127/644/uchiha-sasuke-rinnegan-eternal-mangekyou-sharingan-naruto-shippuuden-wallpaper-preview.jpg"></img>)}</div>
+
+        ReactDOM.render(jh1, document.getElementById("d3"))
+
+    </script>
+</body>
+
+</html>
