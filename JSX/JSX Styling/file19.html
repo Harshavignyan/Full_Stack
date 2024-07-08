@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Display even array value in green and odd in red list items
+    </title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="d3"></div>
+
+    <script type="text/babel">
+        var c = [1,2,3,4,5]
+        var jh1 = <div>{
+            c.map((smtg) => {
+                return (smtg%2==0 ? <li style={{color: 'green'}}>{smtg}</li> : <li style={{color: 'red'}}>{smtg}</li>)
+            })
+        }
+        </div>
+        ReactDOM.render(jh1, document.getElementById("d3"))
+    </script>
+</body>
+
+</html>

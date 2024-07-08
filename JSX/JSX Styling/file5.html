@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Display each object properties
+    </title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        var ob = {
+            firstname: "praveen",
+            lastname: "gubbala",
+            gender: "male",
+            age: 40
+        }
+
+        var jh1 = <div style={{ border: '1px solid', margin: '10px', padding: '10px' }}>
+            <h1>Name:{ob.firstname}</h1>
+            <h4>Gender:{ob.gender}</h4>
+            <i>Age:{ob.age}</i>
+        </div>
+
+        ReactDOM.render(jh1, document.getElementById("root"))
+    </script>
+</body>
+
+</html>
