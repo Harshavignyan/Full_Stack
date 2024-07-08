@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Generate list of strings for the given array of strings
+    </title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="d1"></div>
+    <!-- <ul id="sd"></ul> -->
+
+    <script type="text/babel">
+
+        var b = ["akshay", "prudvi", "mounika", "kavya"]
+
+        var jh1 = <div>
+            <h1>
+                Welcome to Edupoly
+            </h1>
+            <ul>{
+                b.map((smtg) => {
+                    return <li>{smtg}</li>
+                })
+            }
+            </ul>
+        </div>
+
+        ReactDOM.render(jh1, document.getElementById("d1"))
+
+    </script>
+</body>
+
+</html>

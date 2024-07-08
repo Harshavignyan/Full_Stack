@@ -1,0 +1,85 @@
+<!-- using js dom and events -->
+
+<!-- <html>
+
+<head>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <title>Likes dislikes-JSX</title>
+</head>
+
+<body>
+    <div style="display:flex;width:100%;height:100%;justify-content:center">
+        <div style="align-self: center">
+            <button onclick="like()">Like</button> <b id="l1"></b> &nbsp;&nbsp;&nbsp;
+            <button onclick="dislike()">DisLike</button> <b id="l2"></b> &nbsp;&nbsp;&nbsp;
+        </div>
+
+    </div>
+
+    <script>
+        var likes = 0;
+        var dislikes = 0;
+        document.getElementById("l1").innerHTML = likes;
+        document.getElementById("l2").innerHTML = dislikes;
+
+        function like() {
+            likes++;
+            document.getElementById("l1").innerHTML = likes;
+        }
+
+        function dislike() {
+            dislikes++;
+            document.getElementById("l2").innerHTML = dislikes;
+        }
+    </script>
+</body>
+
+</html> -->
+
+<!-- using jsx and react -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>React Like/Dislike</title>
+    <!-- Add React and ReactDOM from a CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        // Define the LikeDislike component
+        function LikeDislike() {
+            // Initialize state for likes and dislikes using React hooks
+            const [likes, setLikes] = React.useState(0);
+            const [dislikes, setDislikes] = React.useState(0);
+
+            // Define functions to handle like and dislike button clicks
+            const handleLike = () => setLikes(likes + 1);
+            const handleDislike = () => setDislikes(dislikes + 1);
+
+            // Render the component
+            return (
+                <div style={{ display: 'flex', width: '100%', height: '100%', justifyContent: 'center' }}>
+                    <div style={{ alignSelf: 'center' }}>
+                        <button onClick={handleLike}>Like</button> <b>{likes}</b> &nbsp;&nbsp;&nbsp;
+                        <button onClick={handleDislike}>DisLike</button> <b>{dislikes}</b> &nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+            );
+        }
+
+        // Render the LikeDislike component into the root div
+        ReactDOM.render(<LikeDislike />, document.getElementById('root'));
+
+    </script>
+</body>
+
+</html>

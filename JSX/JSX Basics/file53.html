@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Generate gallery for the given array of image urls
+    </title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="d1"></div>
+
+    <script type="text/babel">
+        var scientists = [
+            "https://cdn.pixabay.com/photo/2016/12/27/06/38/albert-einstein-1933340_960_720.jpg",
+            "https://cdn.pixabay.com/photo/2012/10/26/00/06/charles-robert-darwin-62911_960_720.jpg",
+            "https://cdn.pixabay.com/photo/2019/01/16/20/26/isaac-newton-3936704_960_720.png"
+        ];
+
+        var jh1 = <div>{
+            scientists.map((smtg) => {
+                return <li><img  width="100px" src={smtg} /></li>
+            })
+        }
+        </div>
+
+        ReactDOM.render(jh1, document.getElementById("d1"))
+
+    </script>
+</body>
+
+</html>

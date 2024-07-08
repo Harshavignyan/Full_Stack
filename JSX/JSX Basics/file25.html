@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print merged array values in sorted order of given two arrays</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="d3"></div>
+
+    <script type="text/babel">
+
+        var a = [10,20,30]
+        var b = [1,2,3]
+
+        var jh10 = <div>{
+            a.concat(b).sort((a,b) => {return a>b? 1 : -1}).map((smtg) => {
+                return <li>{smtg}</li>
+            })
+        }
+        </div>
+
+        ReactDOM.render(jh10, document.getElementById("d3"))
+
+    </script>
+</body>
+
+</html>
