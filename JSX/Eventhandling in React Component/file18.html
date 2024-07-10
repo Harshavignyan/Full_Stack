@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="d2"></div>
+    <script type="text/babel">
+        function App() {
+            var [selectedCountry, setSelectedCountry] = React.useState('');
+
+            var handleRadioChange = (e) => {
+                setSelectedCountry(e.target.value);
+            }
+
+            return (
+                <div>
+                    <input name='crty' type="radio" value="India" onChange={handleRadioChange} />IND
+                    <input name='crty' type="radio" value="United State of America" onChange={handleRadioChange} />USA
+                    <h1>{selectedCountry}</h1>
+                </div>
+            )
+        }
+
+        ReactDOM.render(<App />, document.getElementById("d3"))
+    </script>
+</body>
+
+</html>

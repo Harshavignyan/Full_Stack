@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="d2"></div>
+    <script type="text/babel">
+        function App() {
+            var [techs, setTechs] = React.useState([]);
+
+            function handleTechs(e) {
+                if (e.target.checked === false) {
+                    var updatedTechs = techs.filter((tech) => tech !== e.target.value);
+                    setTechs(updatedTechs);
+                } else {
+                    setTechs([...techs, e.target.value]);
+                }
+            }
+
+            return (
+                <div>
+                    {
+                        <div>
+                            <input type="checkbox" onChange={handleTechs} value="react" />:ReactJS<br />
+                            <input type="checkbox" onChange={handleTechs} value="angualr" />:Angular<br />
+                            <input type="checkbox" onChange={handleTechs} value="nodejs" />:Nodejs<br />
+                            <input type="checkbox" onChange={handleTechs} value="express" />:Express<br />
+                            <input type="checkbox" onChange={handleTechs} value="mongo" />:Mongodb<br />
+                            <input type="checkbox" onChange={handleTechs} value="mongoose" />:Mongoose<br />
+                            <input type="checkbox" onChange={handleTechs} value="mysql" />:MySql<br />
+                            <h1>{techs.join(', ')}</h1>
+                        </div>
+                    }
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById("d3"));
+    </script>
+</body>
+
+</html>

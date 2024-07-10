@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="d3"></div>
+    <script type="text/babel">
+
+        var Xyz = function () {
+            var [like, setLike] = React.useState(0);
+            var [dislike, setDislike] = React.useState(0);
+
+            var handleLike = () => {
+                setLike(like + 1)
+            }
+            var handleDislike = () => {
+                setDislike(dislike + 1)
+            }
+            return (
+                <div>
+                    <p>Like: {like}</p>
+                    <p>Dislike: {dislike}</p>
+                    <button onClick={handleLike}>Like</button>&nbsp;&nbsp;
+                    <button onClick={handleDislike}>Dislike</button>
+
+                </div>
+            )
+        }
+        ReactDOM.render(<Xyz />, document.getElementById('d3'))
+    </script>
+</body>
+
+</html>

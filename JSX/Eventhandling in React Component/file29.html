@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="d3"></div>
+    <script type="text/babel">
+
+        function Rating() {
+            const [rating, setRating] = React.useState(0);
+
+            function rate(r) {
+                setRating(r);
+            }
+
+            const stars = [];
+            for (let i = 1; i <= 5; i++) {
+                stars.push(
+                    <span
+                        key={i}
+                        onClick={() => rate(i)}
+                        style={{ fontSize: '30px', cursor: 'pointer' }}
+                    >
+                        {rating >= i ? '★' : '☆'}
+                    </span>
+                );
+            }
+
+            return (
+                <div>
+                    <h1>
+                        Rating: <div>{rating}/5</div>
+                    </h1>
+                    {stars}
+                </div>
+            );
+        }
+
+        ReactDOM.render(<Rating />, document.getElementById('d3'))
+    </script>
+</body>
+
+</html>
