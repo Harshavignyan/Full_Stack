@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <!-- render jsx element in html -->
+    <div id="d1"></div>
+    <script type="text/babel">
+        var Jkl = function () {
+            var [ar, setAr] = React.useState(['ram', 'krishna', 'praveen', 'edupoly', 'govind', 'rohit'])
+            return (
+                <div>
+                    {
+                        ar.map((a) => { return <li>{a.split('').reverse().join('')}</li> })
+                    }
+                </div>
+            )
+        }
+        ReactDOM.render(<Jkl />, document.getElementById('d2'));
+    </script>
+</body>
+
+</html>

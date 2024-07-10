@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <!-- render jsx element in html -->
+    <div id="d1"></div>
+    <script type="text/babel">
+        var Abc = function () {
+            var [ar, setAr] = React.useState([12, 23, 19, 293, 488, 39]);
+            var [br, setBr] = React.useState([100, 200, 150, 230, 120]);
+            return (
+                <div>
+                    {
+                        ar.concat(br).sort((a, b) => { return a > b ? 1 : -1 }).map((a) => {
+                            return <li>{a}</li>
+                        })
+                    }
+                </div>
+            )
+        }
+        ReactDOM.render(<Abc />, document.getElementById('d1'))
+    </script>
+</body>
+
+</html>
