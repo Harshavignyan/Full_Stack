@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            margin: 0px auto;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const File = React.forwardRef((props, ref) => {
+            const [username, setUsername] = React.useState("");
+            const [password, setPassword] = React.useState("");
+            var i1Ref = React.useRef();
+            var i2Ref = React.useRef();
+            var i3Ref = React.useRef();
+
+            React.useEffect(() => {
+                i1Ref.current.focus();
+            }, []);
+
+            function handleKeyPress(event) {
+                if (event.key === "Enter") {
+                    if (event.target.name === "username") {
+                        setUsername(event.target.value);
+                        console.log(event.target.value)
+                        i2Ref.current.focus();
+                    } else if (event.target.name === "password") {
+                        setPassword(event.target.value);
+                        console.log(event.target.value)
+                        i3Ref.current.focus();
+                    }
+                }
+            }
+
+            function buttonclick() {
+                alert("Credentials received");
+                ref.current.focus()
+            }
+
+            return (
+                <div style={{ backgroundColor: "#C1E1C1", width: "", height: "734px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <div style={{ backgroundColor: "#F5F5DC", borderRadius: "14px", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", width: "40%", height: "400px", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+                        <input
+                            ref={i1Ref}
+                            name="username"
+                            placeholder="Username"
+                            onKeyUp={handleKeyPress}
+                            style={{ fontSize: "20px", color: "#023020", fontFamily: "Times New Roman", backgroundColor: "#EADDCA", height: "30px", boxShadow: "rgba(100, 100, 111, 0.05) 0px 7px 29px 0px", border: "none", borderBottom: "1px solid", outline: "none" }}
+                            type="text"
+                        />
+                        <br />
+                        <input
+                            ref={i2Ref}
+                            name="password"
+                            placeholder="Password"
+                            onKeyUp={handleKeyPress}
+                            style={{ fontSize: "20px", color: "#023020", fontFamily: "Times New Roman", backgroundColor: "#EADDCA", height: "30px", boxShadow: "rgba(100, 100, 111, 0.05) 0px 7px 29px 0px", border: "none", borderBottom: "1px solid", outline: "none" }}
+                            type="text"
+                        />
+                        <br /><br />
+                        <button
+                            ref={i3Ref}
+                            onKeyUp={buttonclick}
+                            style={{
+                                backgroundColor: "#e1ecf4",
+                                borderRadius: "3px",
+                                border: "1px solid #7aa7c7",
+                                boxShadow: "rgba(255, 255, 255, .7) 0 1px 0 0 inset",
+                                boxSizing: "border-box",
+                                color: "#39739d",
+                                cursor: "pointer",
+                                display: "inline-block",
+                                fontFamily: "Times New Roman",
+                                fontSize: "13px",
+                                fontWeight: "400",
+                                lineHeight: "1.15385",
+                                margin: "0",
+                                outline: "none",
+                                padding: "8px .8em",
+                                position: "relative",
+                                textAlign: "center",
+                                textDecoration: "none",
+                                userSelect: "none",
+                                touchAction: "manipulation",
+                                verticalAlign: "baseline",
+                                whiteSpace: "nowrap"
+                            }}
+                        >
+                            Login
+                        </button>
+                    </div>
+                </div>
+            );
+        });
+
+        const File2 = React.forwardRef((props, ref) => {
+
+            const [hobbies, setHobbies] = React.useState("");
+            const [status, setStatus] = React.useState("");
+            var i4Ref = React.useRef();
+            var i5Ref = React.useRef();
+            var i6Ref = React.useRef();
+
+            React.useImperativeHandle(ref, () => ({
+                focus: () => {
+                    i4Ref.current.focus();
+                },
+                getValue: () => {
+                    return i4Ref.current.value;
+                }
+            }))
+
+            function handleKeyPress(event) {
+                if (event.key === "Enter") {
+                    if (event.target.name === "hobbies") {
+                        setHobbies(event.target.value);
+                        console.log(event.target.value)
+                        i5Ref.current.focus();
+                    } else if (event.target.name === "status") {
+                        setStatus(event.target.value);
+                        console.log(event.target.value)
+                        i6Ref.current.focus();
+                    }
+                }
+            }
+
+            function buttonclick() {
+                alert("Hobbies and Status received");
+            }
+
+            return (
+                <div style={{ backgroundColor: "#F0E68C", width: "", height: "734px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <div style={{ backgroundColor: "#F5F5DC", borderRadius: "14px", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", width: "40%", height: "400px", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+                        <input
+                            ref={i4Ref}
+                            name="hobbies"
+                            placeholder="Hobbies"
+                            onKeyUp={handleKeyPress}
+                            style={{ fontSize: "20px", color: "#023020", fontFamily: "Times New Roman", backgroundColor: "#EADDCA", height: "30px", boxShadow: "rgba(100, 100, 111, 0.05) 0px 7px 29px 0px", border: "none", borderBottom: "1px solid", outline: "none" }}
+                            type="text"
+                        />
+                        <br />
+                        <input
+                            ref={i5Ref}
+                            name="status"
+                            placeholder="Status"
+                            onKeyUp={handleKeyPress}
+                            style={{ fontSize: "20px", color: "#023020", fontFamily: "Times New Roman", backgroundColor: "#EADDCA", height: "30px", boxShadow: "rgba(100, 100, 111, 0.05) 0px 7px 29px 0px", border: "none", borderBottom: "1px solid", outline: "none" }}
+                            type="text"
+                        />
+                        <br /><br />
+                        <button
+                            ref={i6Ref}
+                            onClick={buttonclick}
+                            style={{
+                                backgroundColor: "#e1ecf4",
+                                borderRadius: "3px",
+                                border: "1px solid #7aa7c7",
+                                boxShadow: "rgba(255, 255, 255, .7) 0 1px 0 0 inset",
+                                boxSizing: "border-box",
+                                color: "#39739d",
+                                cursor: "pointer",
+                                display: "inline-block",
+                                fontFamily: "Times New Roman",
+                                fontSize: "13px",
+                                fontWeight: "400",
+                                lineHeight: "1.15385",
+                                margin: "0",
+                                outline: "none",
+                                padding: "8px .8em",
+                                position: "relative",
+                                textAlign: "center",
+                                textDecoration: "none",
+                                userSelect: "none",
+                                touchAction: "manipulation",
+                                verticalAlign: "baseline",
+                                whiteSpace: "nowrap"
+                            }}
+                        >
+                            Send
+                        </button>
+                    </div>
+                </div>
+            );
+        });
+
+        function Display() {
+            const file2Ref = React.useRef();
+
+            return (
+                <div>
+                    <File ref={file2Ref} />
+                    <File2 ref={file2Ref} />
+                </div>
+            );
+        }
+
+        ReactDOM.render(<Display />, document.getElementById("root"));
+    </script>
+</body>
+
+</html>
