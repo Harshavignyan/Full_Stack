@@ -1,0 +1,32 @@
+.maindiv{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    height: 65px;
+    /* border: 1px solid; */
+    align-items: center;
+    font-size: xx-large;
+    background-color: 	#EADDCA;
+    font-family: 'Times New Roman', Times, serif;
+}
+.leftdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1px solid; */
+    width: 100%;
+}
+.rightdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border:1px solid; */
+    width: 100%;
+}
+.navlink{
+    text-decoration: none;
+    color: #5C4033;
+}
+.navlink:hover{
+    color:white;
+}

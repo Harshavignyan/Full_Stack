@@ -1,0 +1,28 @@
+.coursemain{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid; */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+.countriescoursesubdiv{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: start;
+    /* border: 1px solid; */
+    width: 50%;
+    height: 450px;
+    overflow-y: auto;
+}
+.flagscoursesubdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+    width: 50%;
+    /* margin-left: 6%; */
+    
+}
