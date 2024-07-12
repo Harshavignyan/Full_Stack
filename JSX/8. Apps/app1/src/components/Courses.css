@@ -1,0 +1,12 @@
+.coursesdisp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: column;
+}
+.courselist{
+    font-size: x-large;
+}
