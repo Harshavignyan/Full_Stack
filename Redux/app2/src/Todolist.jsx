@@ -1,8 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { addTodo } from './store/actions'
 
-function Todolist({todoReducer:{todolist},dispatch}){
+
+function Todolist({todos,addTodo}){
     var [newTask,setNewTask] = React.useState('')
     function handleNewTask(e){
         setNewTask(e.target.value)
@@ -11,10 +11,10 @@ function Todolist({todoReducer:{todolist},dispatch}){
         <div>
             <h1>Todos</h1>
             <input type="text" onChange={handleNewTask}/>
-            <button onClick={() => {dispatch(addTodo(newTask))}}>Add Todo</button>
+            <button onClick={() => {addTodo(newTask)}}>Add Todo</button>
             <ul>
                 {
-                    todolist?.map((t,i) => {
+                    todos.todolist?.map((t,i) => {
                         return <li>{t}</li>
                     })
                 }
@@ -23,4 +23,16 @@ function Todolist({todoReducer:{todolist},dispatch}){
     )
 }
 
-export default connect(store => store) (Todolist)
+function mapStateToProps(state){
+    return state
+}
+
+function mapDispatchToProps(dispatch){
+    return {
+        addTodo:(nt) => {
+            dispatch({type:'ADDTASK',payload:nt})
+        }
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps) (Todolist)
