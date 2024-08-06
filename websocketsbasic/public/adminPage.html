@@ -1,0 +1,16 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="inc('BRA')">Inc Brazil</button>
+        <button onclick="inc('ARG')">Inc Argentina</button>
+        <script>
+            function inc(country){
+                fetch(`/inc/${country}`)
+                .then(res=>res.json())
+                .then(data=>console.log(data))
+            }
+        </script>
+    </body>
+</html>
